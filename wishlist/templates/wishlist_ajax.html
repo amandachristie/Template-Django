@@ -84,17 +84,7 @@
             <th scope="col" class="align-middle text-center">Deskripsi</th>
         </tr>
     </thead>
-
-    <tbody class="table-group-divider">
-    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
-    {% for barang in list_barang %}
-        <tr>
-            <td>{{barang.nama_barang}}</td>
-            <td>{{barang.harga_barang}}</td>
-            <td>{{barang.deskripsi}}</td>
-        </tr>
-    {% endfor %}
-    </tbody>
+    <tbody class="table-group-divider"></tbody>
 </table>
 
 <p>Sesi terakhir login: {{ last_login }}</p>
