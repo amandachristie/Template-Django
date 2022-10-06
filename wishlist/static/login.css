@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    background: linear-gradient(45deg, rgb(116,235,213), rgb(63,43,150));
+}
+.items {
+    display: flex;
+    justify-content: center;
+}
+.card-body {
+    width:350px;
+    margin: 120px auto;
+    padding:30px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+}
+table {
+    border-collapse: collapse;
+    background: #f5f7ff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    border-width: 5px;
+}
+tr {
+    height: 50px;
+}
+td{
+    padding-left: 15px;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Poppins';
+}
+a,p {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 14px;
+}
+a:hover{
+    color: rgb(154, 70, 145);
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 14px;
+}
+.message {
+    color: rgb(154, 70, 145);
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+.button {
+    border: 0px;
+    color: #fff;
+    background-color: #52ae42;
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 0px rgba(145, 145, 145, 0.75);
+}
+.button:hover {
+    background-color: #2c2c2c;
+}

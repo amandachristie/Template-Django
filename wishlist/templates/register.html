@@ -1,34 +1,39 @@
+<html>
 {% extends 'base.html' %}
 
 {% block meta %}
-<title>Registrasi Akun</title>
+<title>Account Registration</title>
 {% endblock meta %}
 
 {% block content %}  
 
-<div class = "login">
-    
-    <h1>Formulir Registrasi</h1>  
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+</head>
 
-        <form method="POST" >  
-            {% csrf_token %}  
-            <table>  
-                {{ form.as_table }}  
-                <tr>  
-                    <td></td>
-                    <td><input type="submit" name="submit" value="Daftar"/></td>  
-                </tr>  
-            </table>  
-        </form>
+<body>
+    <div class="items">
+        <div class="card-body">
+            
+            <h1>Registration</h1>  
 
-    {% if messages %}  
-        <ul>   
-            {% for message in messages %}  
-                <li>{{ message }}</li>  
+                <form method="POST" >  
+                    {% csrf_token %}  
+                    <table>  
+                        {{ form.as_table }}
+                    </table> 
+                    <center><input class="btn button" type="submit" name="submit" value="Sign Up"/> </center>
+                </form>
+
+            {% if messages %}    
+                {% for message in messages %}  
+                    <p class="message">{{ message }}</p>
                 {% endfor %}  
-        </ul>   
-    {% endif %}
+            {% endif %}
 
-</div>  
-
+        </div> 
+    </div> 
+</body>
 {% endblock content %}
+</html>
